@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    style
+      link(rel="stylesheet", href="/css/style.css")
+    block title
+      title= title
+  header
+    a(href='/signup') signup
+    = '\n'
+    a(href='/signin') signin
+    = '\n'
+    a(href='/signout') Logout
+  body
+    h1 Welcome to #{title}
+    block content

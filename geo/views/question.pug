@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+    h2 Question : #{question.q}
+
+    if (validate != null)
+      if (!validate)
+        validate.right Congrats you are right!
+      else
+        validate.wrong Sorry you are wrong!
+
+    form(method="post")
+      fieldset
+        if !question.cs
+          p
+            label(for="answer") yes:
+            input(type="radio", name="answer" value="true")
+          p
+            label(for="answer") No:
+            input(type="radio", name="answer" value="false")
+        else
+          each item in question.cs
+            p
+              label(for="choice") #{item}:
+              input(type="radio", name="answer", value=c)
+        p.buttons
+          input(type="submit", value="Post")

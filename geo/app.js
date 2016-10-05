@@ -65,4 +65,4 @@ app.use((err, req, res, next) => {
 
 authRouter(app)
  
-app.listen(8000);
+module.exports = app;

@@ -13,7 +13,8 @@
     "lodash": "^4.16.3",
     "mkdirp": "^0.5.1",
     "pug": "^2.0.0-beta6",
-    "sanitize-filename": "^1.6.1"
+    "sanitize-filename": "^1.6.1",
+    "socket.io": "^1.4.8"
   },
   "devDependencies": {},
   "scripts": {
